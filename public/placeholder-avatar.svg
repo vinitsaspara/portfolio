@@ -1,0 +1,8 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="256" height="256" fill="#E5E7EB"/>
+  <circle cx="128" cy="100" r="40" fill="#9CA3AF"/>
+  <path d="M64 208C64 172.654 92.654 144 128 144C163.346 144 192 172.654 192 208V256H64V208Z" fill="#9CA3AF"/>
+  <text x="128" y="220" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="12">
+    Professional Photo
+  </text>
+</svg>
