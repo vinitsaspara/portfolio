@@ -203,6 +203,19 @@ export default function Projects() {
                       <Github className="w-4 h-4" />
                       Code
                     </motion.a>
+                    {project.liveUrl && (
+                      <motion.a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="flex items-center gap-2 bg-green-600/80 hover:bg-green-500/80 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 border border-green-500/40 hover:border-green-400/60"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        Live Demo
+                      </motion.a>
+                    )}
                     <motion.button
                       onClick={() => setSelectedProject(project)}
                       whileHover={{ scale: 1.05 }}
@@ -378,17 +391,19 @@ export default function Projects() {
                         <Github className="w-5 h-5" />
                         View Source Code
                       </motion.a>
-                      <motion.a
-                        href={selectedProject.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200 border border-blue-500/50"
-                      >
-                        <ExternalLink className="w-5 h-5" />
-                        View Live Demo
-                      </motion.a>
+                      {selectedProject.liveUrl && (
+                        <motion.a
+                          href={selectedProject.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                          className="flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200 border border-blue-500/50"
+                        >
+                          <ExternalLink className="w-5 h-5" />
+                          Live Demo
+                        </motion.a>
+                      )}
                     </div>
                   </div>
                 </div>

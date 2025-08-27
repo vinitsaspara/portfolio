@@ -157,10 +157,10 @@ export default function About() {
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 rounded-3xl p-1">
                   <div className="w-full h-full bg-white rounded-3xl p-2">
                     <Image
-                      src="/pic1.jpeg"
+                      src='/profile_image.jpg'
                       alt={personalInfo.name}
                       fill
-                      className="rounded-2xl object-cover"
+                      className="rounded-2xl object-left"
                       sizes="320px"
                       priority
                     />

@@ -1,6 +1,7 @@
 import { Project, Experience, Skill, SocialLink } from "@/types";
 
 export const personalInfo = {
+  img:"/profile_image.jpg",
   name: "Vinit Saspara",
   title: "Full Stack Developer",
   email: "sasparavinit@gmail.com",
@@ -61,7 +62,7 @@ export const projects: Project[] = [
       "ShadCN UI",
     ],
     githubUrl: "https://github.com/vinitsaspara/AgriRent",
-    liveUrl: "https://your-agrirent.vercel.app",
+    liveUrl: undefined,
     featured: true,
   },
   {
@@ -80,7 +81,7 @@ export const projects: Project[] = [
       "Prisma",
     ],
     githubUrl: "https://github.com/HarshDonda-23DIT010/Examination-portel",
-    liveUrl: "https://your-exam-portal.vercel.app",
+    liveUrl: undefined,
     featured: true,
   },
   {
@@ -98,7 +99,7 @@ export const projects: Project[] = [
       "ShadCN UI",
     ],
     githubUrl: "https://github.com/vinitsaspara/spoural_managment_system",
-    liveUrl: "https://your-spoural-management.vercel.app",
+    liveUrl: undefined,
     featured: true,
   },
   {
@@ -115,7 +116,7 @@ export const projects: Project[] = [
       "Tailwind CSS",
     ],
     githubUrl: "https://github.com/vinitsaspara/online_job_platform",
-    liveUrl: "https://your-job-portal.vercel.app",
+    liveUrl: "https://job-frontend-v64g.vercel.app/",
     featured: false,
   },
 ];
