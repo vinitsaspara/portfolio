@@ -1,7 +1,7 @@
 import { Project, Experience, Skill, SocialLink } from "@/types";
 
 export const personalInfo = {
-  img:"/profile_image.jpg",
+  image: "/pic4.jpeg",
   name: "Vinit Saspara",
   title: "Full Stack Developer",
   email: "sasparavinit@gmail.com",
@@ -89,7 +89,7 @@ export const projects: Project[] = [
     title: "Spoural Management System",
     description:
       "A role-based web application for managing university-level cultural and sports events. The system supports four user roles: Student, Student Coordinator, Faculty, and Admin. Students can register, view events, apply for participation, track application status, and access practice or final performance schedules. Student Coordinators manage student applications, approve or reject participants, and propose practice schedules to Faculty. Faculty can review selected students, download participant lists, and approve practice schedules. Admins have full control to add faculty/coordinators, and publish or update final schedules. This platform streamlines the entire event management process, ensuring clear communication and efficient coordination across all roles.",
-    image: "/spoural.png",
+    image: "/Spoural.png",
     technologies: [
       "React.js",
       "Node.js",

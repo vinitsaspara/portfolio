@@ -139,14 +139,14 @@ export default function About() {
         </motion.div>
 
         {/* Main Content */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-20">
           {/* Left Side - Profile Photo */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center lg:text-left"
+            className="text-center lg:text-center"
           >
             <div className="relative inline-block">
               <motion.div
@@ -157,7 +157,7 @@ export default function About() {
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 rounded-3xl p-1">
                   <div className="w-full h-full bg-white rounded-3xl p-2">
                     <Image
-                      src='/profile_image.jpg'
+                      src="/pic4.jpg"
                       alt={personalInfo.name}
                       fill
                       className="rounded-2xl object-left"
