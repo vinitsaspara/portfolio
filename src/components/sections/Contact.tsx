@@ -232,23 +232,7 @@ export default function Contact() {
                 </div>
               </motion.div>
 
-              <motion.div
-                variants={itemVariants}
-                className="flex items-center gap-4 p-4 bg-gray-900/40 backdrop-blur-sm border border-gray-700/30 rounded-lg hover:bg-gray-800/40 transition-colors duration-200"
-              >
-                <div className="bg-green-600/20 p-3 rounded-lg">
-                  <Phone className="w-6 h-6 text-green-400" />
-                </div>
-                <div>
-                  <h4 className="text-white font-semibold">Phone</h4>
-                  <a
-                    href={`tel:${personalInfo.phone}`}
-                    className="text-gray-300 hover:text-green-400 transition-colors duration-200"
-                  >
-                    {personalInfo.phone}
-                  </a>
-                </div>
-              </motion.div>
+              
 
               <motion.div
                 variants={itemVariants}

@@ -17,6 +17,15 @@ export default function Home() {
     "Let's Build Something Amazing",
   ];
 
+  const handleDownloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "/Vinit_Saspara_CV.pdf";
+    link.download = "Vinit_Saspara_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   useEffect(() => {
     const currentText = texts[currentIndex];
     const typingSpeed = isDeleting ? 50 : 100;
@@ -106,6 +115,7 @@ export default function Home() {
                 variant="outline"
                 size="lg"
                 className="border-2 border-white text-white bg-black hover:bg-white hover:text-black transition-all duration-300 px-8 py-4 text-lg w-full sm:w-auto"
+                onClick={handleDownloadCV}
               >
                 Download CV
               </Button>

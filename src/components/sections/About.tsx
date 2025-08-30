@@ -2,7 +2,15 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { MapPin, Mail, Code, Database, Server, Wrench } from "lucide-react";
+import {
+  MapPin,
+  Mail,
+  Code,
+  Database,
+  Server,
+  Wrench,
+  Download,
+} from "lucide-react";
 import { personalInfo, skills } from "@/data/portfolio";
 import { Container } from "@/components/ui";
 
@@ -110,6 +118,15 @@ export default function About() {
     },
   };
 
+  const handleDownloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "/Vinit_Saspara_CV.pdf";
+    link.download = "Vinit_Saspara_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section
       id="about"
@@ -197,7 +214,7 @@ export default function About() {
               {personalInfo.bio}
             </motion.p>
 
-            <div className="flex flex-wrap gap-6 justify-center lg:justify-start text-gray-300">
+            <div className="flex flex-wrap gap-6 justify-center lg:justify-start text-gray-300 mb-8">
               <motion.div
                 className="flex items-center gap-3"
                 whileHover={{ scale: 1.05, color: "#60A5FA" }}
@@ -214,6 +231,20 @@ export default function About() {
                 <Mail className="w-5 h-5 text-blue-400" />
                 <span>{personalInfo.email}</span>
               </motion.div>
+            </div>
+
+            {/* Download CV Button */}
+            <div className="flex justify-center lg:justify-start">
+              <motion.button
+                onClick={handleDownloadCV}
+                className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 flex items-center gap-3"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <Download className="w-5 h-5" />
+                Download CV
+              </motion.button>
             </div>
           </motion.div>
         </div>
