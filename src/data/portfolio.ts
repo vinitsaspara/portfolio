@@ -1,4 +1,11 @@
-import { Project, Experience, Skill, SocialLink, Achievement, CodingProfile } from "@/types";
+import {
+  Project,
+  Experience,
+  Skill,
+  SocialLink,
+  Achievement,
+  CodingProfile,
+} from "@/types";
 
 export const personalInfo = {
   image: "/pic4.jpeg",
