@@ -17,6 +17,7 @@ export interface Experience {
   endDate?: string;
   description: string[];
   technologies: string[];
+  certificate?: string;
 }
 
 export interface Skill {
@@ -34,5 +35,32 @@ export interface Contact {
 export interface SocialLink {
   name: string;
   url: string;
+  icon: string;
+}
+
+export interface Achievement {
+  id: string;
+  title: string;
+  organization: string;
+  date: string;
+  description: string;
+  certificate?: string;
+  category: "certification" | "award" | "course" | "hackathon" | "other";
+}
+
+export interface CodingProfile {
+  id: string;
+  platform: string;
+  username: string;
+  profileUrl: string;
+  stats?: {
+    rating?: number;
+    maxRating?: number;
+    globalRank?: number;
+    problemsSolved?: number;
+    contestsAttended?: number;
+    badges?: string[];
+  };
+  color: string;
   icon: string;
 }

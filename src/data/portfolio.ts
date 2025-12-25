@@ -1,4 +1,4 @@
-import { Project, Experience, Skill, SocialLink } from "@/types";
+import { Project, Experience, Skill, SocialLink, Achievement, CodingProfile } from "@/types";
 
 export const personalInfo = {
   image: "/pic4.jpeg",
@@ -104,6 +104,26 @@ export const projects: Project[] = [
   },
   {
     id: "4",
+    title: "Chatify – Real-Time Chat App",
+    description:
+      "Built a real-time chat application using React, Node.js, Socket.IO, and MongoDB with secure authentication, online user status, and media sharing. Features include one-to-one messaging, JWT authentication, image sharing, message timestamps, and responsive UI for seamless communication.",
+    image: "/Chatify.png",
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "Socket.IO",
+      "MongoDB",
+      "Redux Toolkit",
+      "JWT",
+      "Tailwind CSS",
+    ],
+    githubUrl: "https://github.com/vinitsaspara/chatify_client",
+    liveUrl: "https://chatify-client.vercel.app/",
+    featured: true,
+  },
+  {
+    id: "5",
     title: "Job Portal Application",
     description:
       "A full-stack MERN job portal platform connecting employers and job seekers, featuring role-based dashboards, job postings, application management, and advanced search with filters.",
@@ -124,28 +144,83 @@ export const projects: Project[] = [
 export const experience: Experience[] = [
   {
     id: "1",
-    company: "Tech Company Inc.",
-    position: "Senior Frontend Developer",
-    startDate: "2022-01",
-    endDate: undefined,
+    company: "Appifly Infotech",
+    position: "Full Stack Development Intern",
+    startDate: "2025-05",
+    endDate: "2025-06",
     description: [
-      "Led development of user-facing features for a SaaS platform serving 10,000+ users",
-      "Implemented responsive designs and improved page load times by 40%",
-      "Mentored junior developers and conducted code reviews",
+      "Worked as a Full Stack Development Intern on real-world web projects",
+      "Learned and applied frontend and backend development concepts",
+      "Contributed to full stack projects under senior developer guidance",
+      "Gained hands-on experience in building, debugging, and improving web applications",
+      "Followed professional coding standards and company guidelines",
+      "Improved understanding of project workflow, teamwork, and industry practices",
     ],
-    technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
+    technologies: ["React", "Node.js", "JavaScript", "MongoDB", "Express.js"],
+    certificate: "/Appifly_Certificate.pdf",
+  },
+];
+
+export const achievements: Achievement[] = [
+  {
+    id: "1",
+    title: "Full Stack Development Internship",
+    organization: "Appifly Infotech",
+    date: "June 2025",
+    description:
+      "Successfully completed a 1-month Full Stack Development Internship, working on real-world web projects and learning industry best practices.",
+    certificate: "/Appifly_Certificate.pdf",
+    category: "certification",
   },
   {
     id: "2",
-    company: "Startup XYZ",
-    position: "Full Stack Developer",
-    startDate: "2020-06",
-    endDate: "2021-12",
-    description: [
-      "Built and maintained web applications using modern JavaScript frameworks",
-      "Collaborated with design team to implement pixel-perfect UI components",
-      "Integrated third-party APIs and payment processing systems",
-    ],
-    technologies: ["React", "Node.js", "MongoDB", "Express.js"],
+    title: "Software Engineering Specialization",
+    organization: "Coursera",
+    date: "September 2025",
+    description:
+      "Completed a 3-course program covering UML modeling, software design, implementation, testing, and project management with real-world case studies.",
+    certificate: "/SE_Certificate.pdf",
+    category: "course",
+  },
+  {
+    id: "3",
+    title: "CodeChef Starters 218 (Rated) – Global Rank 539",
+    organization: "CodeChef",
+    date: "December 2025",
+    description:
+      "Achieved Global Rank 539 with a score of 500, demonstrating strong problem-solving and competitive programming skills in an IOI-style contest.",
+    certificate: "/CodeChef_Rank_539.png",
+    category: "award",
+  },
+];
+
+export const codingProfiles: CodingProfile[] = [
+  {
+    id: "1",
+    platform: "LeetCode",
+    username: "5sm8S9vq5f",
+    profileUrl: "https://leetcode.com/u/5sm8S9vq5f/",
+    stats: {
+      problemsSolved: 460,
+      rating: 1439,
+      globalRank: 203816,
+      contestsAttended: 7,
+    },
+    color: "from-orange-500 to-yellow-500",
+    icon: "leetcode",
+  },
+  {
+    id: "2",
+    platform: "CodeChef",
+    username: "vinit9399",
+    profileUrl: "https://www.codechef.com/users/vinit9399",
+    stats: {
+      rating: 1382,
+      maxRating: 1382,
+      globalRank: 539,
+      contestsAttended: 11,
+    },
+    color: "from-amber-600 to-orange-700",
+    icon: "codechef",
   },
 ];

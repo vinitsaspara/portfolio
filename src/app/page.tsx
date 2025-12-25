@@ -3,7 +3,14 @@
 import { useState, useEffect } from "react";
 import { Layout } from "@/components/layout";
 import { Container, Button } from "@/components/ui";
-import { About, Projects, Contact } from "@/components/sections";
+import {
+  About,
+  Projects,
+  Experience,
+  Achievements,
+  CodingProfiles,
+  Contact,
+} from "@/components/sections";
 
 export default function Home() {
   const [typedText, setTypedText] = useState("");
@@ -129,6 +136,15 @@ export default function Home() {
 
       {/* Projects Section */}
       <Projects />
+
+      {/* Experience Section */}
+      <Experience />
+
+      {/* Achievements Section */}
+      <Achievements />
+
+      {/* Coding Profiles Section */}
+      <CodingProfiles />
 
       {/* Contact Section */}
       <Contact />
